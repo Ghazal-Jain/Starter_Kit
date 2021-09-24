@@ -15,7 +15,7 @@ MonoBehaviour:
   myClips:
   - {fileID: 8300000, guid: 64f79ca79a46c45b9a7d6d448fbdebe5, type: 3}
   myMixer: []
-  Mute: 0
+  _playType: 1
   spatialBlend: 1
   Volume:
     minValue: 0.50455225

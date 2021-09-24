@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2104fd4031cf5438c83c67b156bd8a29, type: 3}
+  m_Name: Answer
+  m_EditorClassIdentifier: 
+  myClips:
+  - {fileID: 8300000, guid: ccfd44c3904da9c4e99a913255115c3a, type: 3}
+  - {fileID: 8300000, guid: ef6da765db0083d4f930b6fdb000a3a3, type: 3}
+  - {fileID: 8300000, guid: 1d658c5c8b258eb4fbd4d7296eab1406, type: 3}
+  - {fileID: 8300000, guid: 61dff35712c9e2a4aae3518fbc776059, type: 3}
+  - {fileID: 8300000, guid: fd492ea7ff6814c4ca9fade9aae9be25, type: 3}
+  - {fileID: 8300000, guid: cb13422fdc41cef438d360eb08511fa6, type: 3}
+  - {fileID: 8300000, guid: 45497852a30dece47a990354915bb228, type: 3}
+  myMixer: []
+  loop: 0
+  _playType: 0
+  spatialBlend: 1
+  Volume:
+    minValue: 0.72608346
+    maxValue: 1
+  Pitch:
+    minValue: 0.73715335
+    maxValue: 1.8868275

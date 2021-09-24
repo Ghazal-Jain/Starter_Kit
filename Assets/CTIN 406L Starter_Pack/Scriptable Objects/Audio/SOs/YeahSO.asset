@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 03aeb1c431ec441889a40e44df97042e, type: 3}
   - {fileID: 8300000, guid: a5229c9d17e904a9c98b8a31d5dc71aa, type: 3}
   myMixer: []
-  Mute: 0
+  _playType: 0
   spatialBlend: 1
   Volume:
     minValue: 0.50455225

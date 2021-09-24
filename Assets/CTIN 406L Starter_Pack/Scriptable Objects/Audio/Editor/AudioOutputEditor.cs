@@ -1,24 +1,26 @@
-using UnityEngine;
-using System.Collections;
 using UnityEditor;
+using UnityEngine;
 
-[CustomEditor(typeof(AudioOutput), true)]
-public class AudioOutputEditor : Editor
+namespace CTIN_406L_Starter_Pack.Scriptable_Objects.Audio.Editor
 {
-	public override void OnInspectorGUI()
-	{EditorGUI.BeginDisabledGroup(serializedObject.isEditingMultipleObjects);
-		if (GUILayout.Button("Preview"))
-		{
-			((AudioOutput) target).CheckAudioSource();
-			((AudioOutput) target).StartMyCoroutine();
-		}
-		if (GUILayout.Button("Stop"))
-		{
-			((AudioOutput) target).StopMyCoroutine();
-		}
-		EditorGUI.EndDisabledGroup();
-		DrawDefaultInspector();
+	[CustomEditor(typeof(AudioPlaylist), true)]
+	public class AudioOutputEditor : UnityEditor.Editor
+	{
+		public override void OnInspectorGUI()
+		{EditorGUI.BeginDisabledGroup(serializedObject.isEditingMultipleObjects);
+			if (GUILayout.Button("Play"))
+			{
+				((AudioPlaylist) target).CheckAudioSource();
+				((AudioPlaylist) target).StartMyCoroutine();
+			}
+			if (GUILayout.Button("Stop"))
+			{
+				((AudioPlaylist) target).StopMyCoroutine();
+			}
+			EditorGUI.EndDisabledGroup();
+			DrawDefaultInspector();
 
 
+		}
 	}
 }

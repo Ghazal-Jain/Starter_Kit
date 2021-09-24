@@ -19,11 +19,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
   myMixer:
   - {fileID: 24300002, guid: 3bab0909ffcdf4120b4c8f1a9fdf144f, type: 2}
-  Mute: 0
+  loop: 0
+  _playType: 1
   spatialBlend: 1
   Volume:
     minValue: 0.67634463
-    maxValue: 0.67634463
+    maxValue: 0.86952645
   Pitch:
     minValue: 0.7724895
-    maxValue: 1.4007617
+    maxValue: 2.0996253
