@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{E1AF839A-82EC-6AD6-4F3D-587E4A5668DC}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs">
+    <Files>
+      <File FileName="Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" Line="18" Column="1" />
+      <File FileName="Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/CustomAudioEvent.cs" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Starter_Kit" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Starter_Kit" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5a077189-4684-41cc-a156-c178c81f4ba7" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Ghazal/Documents/USC/Courses/CTIN_406L-Sound Design/Pig Game Unity/Starter_Kit/Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" relfile="Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" line="18" column="1" />
+      <Breakpoint file="/Users/Ghazal/Documents/USC/Courses/CTIN_406L-Sound Design/Pig Game Unity/Starter_Kit/Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" relfile="Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" line="32" column="1" />
+      <Breakpoint file="/Users/Ghazal/Documents/USC/Courses/CTIN_406L-Sound Design/Pig Game Unity/Starter_Kit/Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" relfile="Assets/CTIN 406L Starter_Pack/Scriptable Objects/Audio/AudioOutput.cs" line="31" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

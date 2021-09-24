@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2104fd4031cf5438c83c67b156bd8a29, type: 3}
+  m_Name: Incursion
+  m_EditorClassIdentifier: 
+  myClips:
+  - {fileID: 8300000, guid: a4b621eb0477c4e8ab765ba7ab9f6181, type: 3}
+  - {fileID: 8300000, guid: 2e259f84c249644cf971a221ecc0c938, type: 3}
+  - {fileID: 8300000, guid: 085c70fa0ebe3456c8a087fdcd1465fc, type: 3}
+  - {fileID: 8300000, guid: 23cae66c77965475fb4f1a05cd755e64, type: 3}
+  - {fileID: 8300000, guid: 43cea42b27f0e41038db78efef9e2e14, type: 3}
+  myMixer: []
+  Mute: 0
+  spatialBlend: 1
+  Volume:
+    minValue: 0.5464087
+    maxValue: 0.95666516
+  Pitch:
+    minValue: 0.3332286
+    maxValue: 2.640921
