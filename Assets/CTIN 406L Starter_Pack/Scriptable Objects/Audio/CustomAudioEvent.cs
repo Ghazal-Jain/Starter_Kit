@@ -32,17 +32,20 @@ public class CustomAudioEvent : AudioEvent
 
 	public override void Play(AudioSource source)
 	{
-		if (myClips.Length == 0) return;
-		if (myMixer.Length != 0)
-			source.outputAudioMixerGroup = myMixer[Random.Range(0, myMixer.Length)];
-
-		CheckSpatialBlend(source);
-		
-		CheckEventPlayType(source);
-		source.Play();
-		if (source.clip == null)
+		if (source)
 		{
-			ResetClipIndex();
+			if (myClips.Length == 0) return;
+			if (myMixer.Length != 0)
+				source.outputAudioMixerGroup = myMixer[Random.Range(0, myMixer.Length)];
+
+			CheckSpatialBlend(source);
+
+			CheckEventPlayType(source);
+			source.Play();
+			if (source.clip == null)
+			{
+				ResetClipIndex();
+			}
 		}
 	}
 
@@ -84,16 +87,20 @@ public class CustomAudioEvent : AudioEvent
 
 	private void PlaySequential(AudioSource source)
 	{
-		if (clipIndex == myClips.Length)
+		if (source)
 		{
-			source.clip = null;
-			return;
+			if (clipIndex == myClips.Length)
+			{
+				source.clip = null;
+				return;
+			}
+
+			source.clip = myClips[clipIndex];
+			clipIndex++;
+			nowPlaying = source.clip.name;
+			source.volume = Random.Range(Volume.minValue, Volume.maxValue);
+			source.pitch = Random.Range(Pitch.minValue, Pitch.maxValue);
 		}
-		source.clip = myClips[clipIndex];
-		clipIndex++;
-		nowPlaying = source.clip.name;
-		source.volume = Random.Range(Volume.minValue, Volume.maxValue);
-		source.pitch = Random.Range(Pitch.minValue, Pitch.maxValue);
 	}
 
 	private void PlayRandom(AudioSource source)
@@ -125,6 +132,7 @@ public class CustomAudioEvent : AudioEvent
 
 	private void CheckSpatialBlend(AudioSource source)
 	{
+		if(source)
 		source.spatialBlend = spatialBlend == SpatialBlendType.Blend2D ? 0 : 1;
 	}
 	

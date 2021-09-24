@@ -72,12 +72,24 @@ namespace CTIN_406L_Starter_Pack.Scriptable_Objects.Audio
                     if (listSO >= audioListSO.Count)
                     {
                         listSO = 0;
+                        m_AudioSource.Stop();
+                        currentSO = null;
+                        TMP_EditorCoroutine.StartCoroutine(DestroyAudioSource());
+                        return;
                     }
                     currentSO = audioListSO[listSO];
                     currentSO.Play(m_AudioSource);
                     listSO++;
                 }
+                
             }
+        }
+
+        IEnumerator DestroyAudioSource()
+        {
+            yield return new WaitForSeconds(1.0f);
+            DestroyImmediate(m_AudioSource);
+            m_AudioSource = null;
         }
 
         private void StartPlayingRandom()
@@ -95,9 +107,7 @@ namespace CTIN_406L_Starter_Pack.Scriptable_Objects.Audio
                             listSO = 0;
                         }
                     }
-                    
                 }
-
                 currentSO.Play(m_AudioSource);
                 clipIndex++;
             }
@@ -109,21 +119,35 @@ namespace CTIN_406L_Starter_Pack.Scriptable_Objects.Audio
             {
                 if (currentSO != null)
                 {
-                    if (clipIndex >= currentSO.myClips.Length)
+                    if (listSO >= audioListSO.Count)
                     {
-                        clipIndex = 0;
-                        if (listSO >= audioListSO.Count)
-                        {
-                            listSO = 0;
-                        }
-                        currentSO = audioListSO[listSO];
-                        currentSO.ResetClipIndex();
-                        listSO++;
+                        listSO = 0;
                     }
+                    currentSO = audioListSO[listSO];
+                    currentSO.Play(m_AudioSource);
+                    listSO++;
                 }
-                currentSO.Play(m_AudioSource);
-                clipIndex++;
             }
+            //Redundant Functionality
+            // if (!m_AudioSource.isPlaying)
+            // {
+            //     if (currentSO != null)
+            //     {
+            //         if (clipIndex >= currentSO.myClips.Length)
+            //         {
+            //             clipIndex = 0;
+            //             if (listSO >= audioListSO.Count)
+            //             {
+            //                 listSO = 0;
+            //             }
+            //             currentSO = audioListSO[listSO];
+            //             currentSO.ResetClipIndex();
+            //             listSO++;
+            //         }
+            //     }
+            //     currentSO.Play(m_AudioSource);
+            //     clipIndex++;
+            // }
         }
 
         public void StartMyCoroutine()
@@ -144,24 +168,27 @@ namespace CTIN_406L_Starter_Pack.Scriptable_Objects.Audio
 
         private void CheckPlayType()
         {
-            if (playType == PlayType.Random && loop == LoopThroughSO.LoopThrough)
+            if (m_AudioSource)
             {
-                StartPlayingRandom();
-            }
+                if (playType == PlayType.Random && loop == LoopThroughSO.LoopThrough)
+                {
+                    StartPlayingRandom();
+                }
 
-            if (playType == PlayType.Random && loop == LoopThroughSO.SinglePlay)
-            {
-                PlaySequentially();
-            }
+                if (playType == PlayType.Random && loop == LoopThroughSO.SinglePlay)
+                {
+                    PlaySequentially();
+                }
 
-            if (playType == PlayType.Sequential && loop == LoopThroughSO.SinglePlay)
-            {
-                PlaySequentially();
-            }
-            
-            if (playType == PlayType.Sequential && loop ==LoopThroughSO.LoopThrough)
-            {
-                PlaySequentiallyLoop();
+                if (playType == PlayType.Sequential && loop == LoopThroughSO.SinglePlay)
+                {
+                    PlaySequentially();
+                }
+
+                if (playType == PlayType.Sequential && loop == LoopThroughSO.LoopThrough)
+                {
+                    PlaySequentiallyLoop();
+                }
             }
         }
 
