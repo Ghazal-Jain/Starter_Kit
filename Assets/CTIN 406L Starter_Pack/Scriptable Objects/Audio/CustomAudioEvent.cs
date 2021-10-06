@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using CTIN_406L_Starter_Pack.Scriptable_Objects.Audio;
+using CTIN_406L_Starter_Pack.Sound_Manager;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.LowLevel;
 using Random = UnityEngine.Random;
 
-public enum SpatialBlendType { Blend2D, Blend3D };
+
 
 [CreateAssetMenu(menuName = "Audio Events/Custom Audio")]
 public class CustomAudioEvent : AudioEvent
