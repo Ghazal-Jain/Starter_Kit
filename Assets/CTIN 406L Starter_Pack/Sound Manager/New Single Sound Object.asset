@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3dcee83e519e5459778cc8ebaadf76, type: 3}
   m_Name: New Single Sound Object
   m_EditorClassIdentifier: 
-  fadeIn: 0
-  fadeTime: 5.96
+  fadeIn: 1
+  fadeTime: 10
   myAudioClip: {fileID: 8300000, guid: 60253bcf834fb4b3cb310e91c8fc1625, type: 3}
   audioMixerGroup: {fileID: 0}
   spatialBlend: 0

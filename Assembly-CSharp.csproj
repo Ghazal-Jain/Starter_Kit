@@ -55,17 +55,19 @@
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\RangedFloat.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\Singleton.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\CustomAudioEvent.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SoundEvent.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\AudioPlaylist.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\ServiceLocator.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\MinMaxRangeAttribute.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\AudioFade.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SoundObjects.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SingleSoundObject.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\AudioFader.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\ObjectPooler.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\AudioEvent.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\MinMaxSlider.cs" />
-     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SoundEvent.cs" />
-     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SingleSoundObject.cs" />
-     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SoundObjects.cs" />
-     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\AudioFader.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\MultipleSoundsObject.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\SoundObjectPlaylist.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

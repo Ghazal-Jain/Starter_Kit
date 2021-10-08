@@ -50,7 +50,7 @@ namespace CTIN_406L_Starter_Pack.Sound_Manager
                 PlaySingleSound(source);
                 if (fadeIn == FadeIn.FadeIn)
                 {
-                    AudioFader.StartFadeIn(source,volume,5.0f);   
+                    AudioFader.StartFadeIn(source,volume,fadeTime);   
                 }
                 source.Play();
 

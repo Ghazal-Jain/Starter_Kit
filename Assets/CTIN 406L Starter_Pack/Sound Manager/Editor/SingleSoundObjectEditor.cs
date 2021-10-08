@@ -13,7 +13,7 @@ namespace CTIN_406L_Starter_Pack.Sound_Manager.Editor
         public void OnEnable()
         {
             play = EditorUtility.CreateGameObjectWithHideFlags
-            (gameobjectName, HideFlags.None,
+            (gameobjectName, HideFlags.DontSave,
                 typeof(AudioSource)).GetComponent<AudioSource>();
 			
             ((SingleSoundObject) target).SetDefaultParameters();

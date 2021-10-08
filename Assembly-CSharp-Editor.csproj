@@ -52,11 +52,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\Editor\MinMaxSliderEditor.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\Editor\AudioOutputEditor.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\Editor\SingleSoundObjectEditor.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\Editor\RangedFloatDrawer.cs" />
      <Compile Include="Assets\CTIN 406L Starter_Pack\Scriptable Objects\Audio\Editor\AudioEventEditor.cs" />
-     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\Editor\MinMaxSliderEditor.cs" />
-     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\Editor\SingleSoundObjectEditor.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\Editor\MultipleSoundsObjectEditor.cs" />
+     <Compile Include="Assets\CTIN 406L Starter_Pack\Sound Manager\Editor\SoundPlaylistEditor.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
