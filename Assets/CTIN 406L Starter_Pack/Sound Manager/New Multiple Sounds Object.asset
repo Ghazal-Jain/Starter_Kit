@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5d8162e47d20143b0a673f5745491a, type: 3}
+  m_Name: New Multiple Sounds Object
+  m_EditorClassIdentifier: 
+  fadeIn: 1
+  fadeTime: 11
+  myAudioClips:
+  - {fileID: 8300000, guid: 60253bcf834fb4b3cb310e91c8fc1625, type: 3}
+  - {fileID: 8300000, guid: 085c70fa0ebe3456c8a087fdcd1465fc, type: 3}
+  - {fileID: 8300000, guid: cbdca8a3157e7466fa099076c6f7e12b, type: 3}
+  audioMixerGroup: {fileID: 0}
+  spatialBlend: 1
+  setVolume: {x: 0.8, y: 0.8}
+  setPitch: {x: 1, y: 1}
+  _playType: 1
+  loop: 1
+  volume: 0.8
+  pitch: 1
+  spatialBlendVal: 0
